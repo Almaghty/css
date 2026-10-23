@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <!-- П. 1.2 / 4: Заголовок третьей страницы с данными студента -->
+  <title>Сайт — Барило Егор</title>
+  <!-- П. 3: Подключение внешнего файла стилей style.css -->
+  <link href="style.css" rel="stylesheet" type="text/css" /> <!-- добавляем стили -->
+  <style>
+    /* Локальные стилевые настройки для адаптации табличного макета index02.html в деловой стиль */
+    .main-layout-table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid #cbd5e1;
+      background-color: #ffffff;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+    .header-logo-cell {
+      width: 15%;
+      background-color: #ffffff;
+      text-align: center;
+      padding: 15px;
+      border-bottom: 2px solid #1f4068;
+    }
+    /* Изменение: замена ядовитого фона bgcolor=#0000ff и красного шрифта Monotype Corsiva на строгий деловой заголовок */
+    .header-title-cell {
+      background-color: #1f4068;
+      color: #ffffff;
+      text-align: center;
+      padding: 20px;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 26px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+      border-bottom: 2px solid #162e4a;
+    }
+    /* Изменение: замена синей колонки меню с желтыми ссылками на аккуратное светлое деловое меню */
+    .sidebar-menu-cell {
+      width: 18%;
+      min-width: 160px;
+      background-color: #f8fafc;
+      text-align: center;
+      vertical-align: top;
+      padding: 25px 15px;
+      border-right: 1px solid #e2e8f0;
+    }
+    .menu-title {
+      font-family: Georgia, serif;
+      font-size: 18px;
+      font-weight: bold;
+      color: #1f4068;
+      margin-bottom: 20px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #3b82f6;
+    }
+    .sidebar-nav-link {
+      display: block;
+      background-color: #ffffff;
+      color: #1f4068 !important;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 10px 12px;
+      margin-bottom: 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .sidebar-nav-link:hover {
+      background-color: #1f4068;
+      color: #ffffff !important;
+      text-decoration: none;
+      border-color: #1f4068;
+    }
+    .sidebar-nav-link.active {
+      background-color: #3b82f6;
+      color: #ffffff !important;
+      border-color: #2563eb;
+    }
+    .main-content-cell {
+      vertical-align: top;
+      padding: 25px;
+      background-color: #ffffff;
+    }
+    /* Изменение: замена ядовито-оранжевой ячейки #fc9000 с красной рамкой на элегантный информационный блок */
+    .sidebar-info-card {
+      height: auto;
+      min-height: 280px;
+      width: 220px;
+      border-left: 3px solid #1f4068;
+      background-color: #f1f5f9;
+      padding: 15px;
+      border-radius: 0 6px 6px 0;
+      vertical-align: top;
+      box-sizing: border-box;
+      font-size: 13px;
+      line-height: 1.5;
+    }
+    .gallery-img {
+      border: 2px solid #cbd5e1;
+      border-radius: 6px;
+      transition: transform 0.2s, border-color 0.2s;
+      margin: 0 10px;
+    }
+    .gallery-img:hover {
+      border-color: #1f4068;
+      transform: translateY(-2px);
+    }
+    .footer-cell {
+      background-color: #f8fafc;
+      text-align: center;
+      padding: 15px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Общий контейнер страницы -->
+  <div class="container" style="max-width: 1040px; padding: 20px;">
+
+    <!-- Главная табличная сетка страницы по макету задания -->
+    <table class="main-layout-table">
+      <!-- 1. СТРОКА ШАПКИ САЙТА: Заголовок во всю ширину (изображение эмблемы удалено по требованию) -->
+      <tr>
+        <!-- Изменение: замена Monotype Corsiva 43pt и #ff0000 на деловой заголовок; логотип удален -->
+        <td colspan="2" class="header-title-cell">
+          Сайт студента — Барило Егор
+        </td>
+      </tr>
+
+      <!-- 2. СТРОКА ОСНОВНОГО КОНТЕНТА: Меню слева и рабочая область справа -->
+      <tr>
+        <!-- Боковое навигационное меню -->
+        <td class="sidebar-menu-cell">
+          <div class="menu-title">Навигация</div>
+          <!-- Изменение: замена желтых ссылок на аккуратные кнопки делового стиля -->
+          <a href="index.html" class="sidebar-nav-link">Страница 1<br><small style="font-weight: normal; font-size: 11px;">(Главная)</small></a>
+          <a href="index01.html" class="sidebar-nav-link">Страница 2<br><small style="font-weight: normal; font-size: 11px;">(Расписание)</small></a>
+          <a href="index02.html" class="sidebar-nav-link active">Страница 3<br><small style="font-weight: normal; font-size: 11px;">(Стили и блоки)</small></a>
+        </td>
+
+        <!-- Рабочая область страницы -->
+        <td class="main-content-cell">
+          <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            <!-- Заголовок содержания (класс textstyle0) -->
+            <tr class="textstyle0">
+              <td colspan="2">Содержание основной страницы</td>
+            </tr>
+            <!-- Разделительная линия (изменение: заменен агрессивный красный цвет на деловой синий) -->
+            <tr>
+              <td colspan="2">
+                <hr align="center" width="80%" size="2" color="#1f4068" style="margin: 15px auto 20px auto; border: 0; height: 2px; background-color: #1f4068;" />
+              </td>
+            </tr>
+            <tr>
+              <!-- Левая часть: текстовый блок, скролл-окно и открывающиеся изображения -->
+              <td style="padding-right: 20px; vertical-align: top;">
+                <!-- Подзаголовок блока (класс textstyle1) -->
+                <p class="textstyle1">Тут может находиться текстовый блок любого объема</p>
+
+                <!-- Окно с прокруткой (класс layer) -->
+                <div class="layer">
+                  <!-- Заголовок окна со скроллом (класс textstyle3) -->
+                  <p class="textstyle3">Окно с прокруткой</p>
+
+                  <!-- П. 4.1: Содержимое блока наполнено полезным материалом о технологии CSS (класс textstyle4) -->
+                  <p class="textstyle4">
+                    Каскадные таблицы стилей (CSS — Cascading Style Sheets) являются фундаментальной технологией современного интернета. Главная цель внедрения CSS заключается в четком разделении смысловой структуры документа (которая описывается на языке HTML) и его визуального оформления (шрифты, цвета, отступы, границы, анимации и правила адаптивного отображения).
+                  </p>
+                  <p class="textstyle4">
+                    Использование внешних таблиц стилей (файл style.css) позволяет кардинально упростить процесс веб-разработки и сопровождения проектов. Вместо многократного повторения атрибутов цвета, шрифтов и фона в каждом отдельном HTML-теге, разработчик определяет правила оформления один раз в централизованном файле стилей, после чего они автоматически применяются ко всем страницам сайта.
+                  </p>
+                  <p class="textstyle4">
+                    Приведение разнородных веб-страниц к единому корпоративному или деловому стилю — одна из ключевых задач CSS. С помощью продуманной палитры цветов, гармоничных шрифтовых пар и единообразных отступов создается профессиональный и удобный интерфейс, вызывающий доверие пользователей и повышающий качество восприятия информации.
+                  </p>
+                </div>
+
+                <!-- Изменение: графические изображения удалены со страницы для достижения лаконичного делового стиля -->
+                <!-- Класс textstyle2 сохранен для текстовой подписи в соответствии с требованиями задания -->
+                <p class="textstyle2">Страница оформлена в строгом минималистичном текстовом стиле без графических элементов</p>
+              </td>
+
+              <!-- Правая часть: боковой информационный блок (класс textstyle3, изменен в деловой стиль) -->
+              <td class="sidebar-info-card" valign="top">
+                <p class="textstyle3" style="text-align: left; margin-top: 0; color: #1f4068;">Полезная информация:</p>
+                <p style="margin-bottom: 12px; color: #475569;">
+                  Здесь может находиться любая дополнительная информация, документация, ссылки на онлайн-ресурсы или справочные материалы.
+                </p>
+                <div style="background-color: #ffffff; padding: 10px; border-radius: 4px; border: 1px solid #cbd5e1; margin-bottom: 12px;">
+                  <b style="color: #1f4068; font-size: 12px;">Быстрые ссылки:</b>
+                  <ul style="padding-left: 18px; margin: 6px 0; font-size: 12px; color: #334155;">
+                    <li><a href="index.html">Теги HTML</a></li>
+                    <li><a href="index01.html">Расписание пар</a></li>
+                    <li><a href="style.css" target="_blank">Таблица стилей CSS</a></li>
+                  </ul>
+                </div>
+                <p style="font-size: 11px; color: #64748b; line-height: 1.4;">
+                  <i>Совет:</i> для изменения внешнего вида всех страниц достаточно отредактировать файл <code>style.css</code>.
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- 3. СТРОКА ПОДВАЛА САЙТА: Ссылка на онлайн-учебник -->
+      <tr>
+        <td colspan="2" class="footer-cell">
+          <a href="http://htmlbook.ru/practical" target="_blank" style="color: #1f4068; font-size: 15px;">
+            <b>Перейти к учебнику online (htmlbook.ru/practical)</b>
+          </a>
+          <br>
+          <span style="font-size: 12px; color: #64748b; margin-top: 5px; display: inline-block;">
+            Практическая работа по CSS | Выполнил: Барило Егор | 2026 г.
+          </span>
+        </td>
+      </tr>
+    </table>
+
+  </div>
+
+</body>
+</html>
